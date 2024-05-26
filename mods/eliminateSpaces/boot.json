@@ -1,0 +1,244 @@
+{
+  "name": "Eliminate Spaces",
+  "version": "0.0.1",
+  "styleFileList": [],
+  "scriptFileList": [],
+  "tweeFileList": [],
+  "imgFileList": [],
+  "addonPlugin": [
+    {
+      "modName": "TweeReplacer",
+      "addonName": "TweeReplacerAddon",
+      "modVersion": "1.0.0",
+      "params": [
+        {
+          "passage": "Widgets Named Npcs",
+          "findString": "<<widget \"npc\">>",
+          "replace": "<<widget \"npc\">><<silently>>"
+        },
+        {
+          "passage": "Widgets Named Npcs",
+          "findString": "<<set $index to _npcno>>\n<</widget>>",
+          "replace": "<<set $index to _npcno>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person1\">>\n\t<<personselect 0>>\n<</widget>>",
+          "replace": "<<widget \"person1\">><<silently>>\n\t<<personselect 0>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person2\">>\n\t<<personselect 1>>\n<</widget>>",
+          "replace": "<<widget \"person2\">><<silently>>\n\t<<personselect 1>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person3\">>\n\t<<personselect 2>>\n<</widget>>",
+          "replace": "<<widget \"person3\">><<silently>>\n\t<<personselect 2>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person4\">>\n\t<<personselect 3>>\n<</widget>>",
+          "replace": "<<widget \"person4\">><<silently>>\n\t<<personselect 3>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person5\">>\n\t<<personselect 4>>\n<</widget>>",
+          "replace": "<<widget \"person5\">><<silently>>\n\t<<personselect 4>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets Text",
+          "findString": "<<widget \"person6\">>\n\t<<personselect 5>>\n<</widget>>",
+          "replace": "<<widget \"person6\">><<silently>>\n\t<<personselect 5>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate1\">>\n\t<<generateNPC 1>>\n<</widget>>",
+          "replace": "<<widget \"generate1\">><<silently>>\n\t<<generateNPC 1>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate2\">>\n\t<<generateNPC 2>>\n<</widget>>",
+          "replace": "<<widget \"generate2\">><<silently>>\n\t<<generateNPC 2>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate3\">>\n\t<<generateNPC 3>>\n<</widget>>",
+          "replace": "<<widget \"generate3\">><<silently>>\n\t<<generateNPC 3>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate4\">>\n\t<<generateNPC 4>>\n<</widget>>",
+          "replace": "<<widget \"generate4\">><<silently>>\n\t<<generateNPC 4>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate5\">>\n\t<<generateNPC 5>>\n<</widget>>",
+          "replace": "<<widget \"generate5\">><<silently>>\n\t<<generateNPC 5>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generate6\">>\n\t<<generateNPC 6>>\n<</widget>>",
+          "replace": "<<widget \"generate6\">><<silently>>\n\t<<generateNPC 6>>\n<</silently>><</widget>>"
+        },
+
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey1\">>\n\t<<generateNPC 1 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey1\">><<silently>>\n\t<<generateNPC 1 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey2\">>\n\t<<generateNPC 2 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey2\">><<silently>>\n\t<<generateNPC 2 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey3\">>\n\t<<generateNPC 3 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey3\">><<silently>>\n\t<<generateNPC 3 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey4\">>\n\t<<generateNPC 4 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey4\">><<silently>>\n\t<<generateNPC 4 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey5\">>\n\t<<generateNPC 5 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey5\">><<silently>>\n\t<<generateNPC 5 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatey6\">>\n\t<<generateNPC 6 t>>\n<</widget>>",
+          "replace": "<<widget \"generatey6\">><<silently>>\n\t<<generateNPC 6 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev1\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 1>>\n<</widget>>",
+          "replace": "<<widget \"generatev1\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 1>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev2\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 2>>\n<</widget>>",
+          "replace": "<<widget \"generatev2\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 2>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev3\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 3>>\n<</widget>>",
+          "replace": "<<widget \"generatev3\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 3>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev4\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 4>>\n<</widget>>",
+          "replace": "<<widget \"generatev4\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 4>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev5\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 5>>\n<</widget>>",
+          "replace": "<<widget \"generatev5\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 5>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatev6\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 6>>\n<</widget>>",
+          "replace": "<<widget \"generatev6\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 6>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv1\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 1 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv1\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 1 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv2\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 2 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv2\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 2 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv3\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 3 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv3\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 3 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv4\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 4 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv4\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 4 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv5\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 5 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv5\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 5 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyv6\">>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 6 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyv6\">><<silently>>\n\t<<set _generate_victim to 1>>\n\t<<generateNPC 6 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatep2\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 0>>\n\t<<generateNPC 2>>\n<</widget>>",
+          "replace": "<<widget \"generatep2\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 0>>\n\t<<generateNPC 2>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatep3\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 1>>\n\t<<generateNPC 3>>\n<</widget>>",
+          "replace": "<<widget \"generatep3\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 1>>\n\t<<generateNPC 3>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatep4\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 2>>\n\t<<generateNPC 4>>\n<</widget>>",
+          "replace": "<<widget \"generatep4\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 2>>\n\t<<generateNPC 4>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatep5\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 3>>\n\t<<generateNPC 5>>\n<</widget>>",
+          "replace": "<<widget \"generatep5\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 3>>\n\t<<generateNPC 5>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generatep6\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 4>>\n\t<<generateNPC 6>>\n<</widget>>",
+          "replace": "<<widget \"generatep6\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 4>>\n\t<<generateNPC 6>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyp2\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 0>>\n\t<<generateNPC 2 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyp2\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 0>>\n\t<<generateNPC 2 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyp3\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 1>>\n\t<<generateNPC 3 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyp3\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 1>>\n\t<<generateNPC 3 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyp4\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 2>>\n\t<<generateNPC 4 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyp4\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 2>>\n\t<<generateNPC 4 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyp5\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 3>>\n\t<<generateNPC 5 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyp5\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 3>>\n\t<<generateNPC 5 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets NPC Generation",
+          "findString": "<<widget \"generateyp6\">>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 4>>\n\t<<generateNPC 6 t>>\n<</widget>>",
+          "replace": "<<widget \"generateyp6\">><<silently>>\n\t<<set _generate_partner to _args[0] isnot undefined ? _args[0] : 4>>\n\t<<generateNPC 6 t>>\n<</silently>><</widget>>"
+        },
+        {
+          "passage": "Widgets",
+          "findString": "<<widget \"rentday\">>",
+          "replace": "<<widget \"rentday\">><<silently>>"
+        },
+        {
+          "passage": "Widgets",
+          "findString": "<<print $_text_output>>\n<</widget>>",
+          "replace": "<</silently>><<print $_text_output>><</widget>>"
+        }
+      ]
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "TweeReplacer",
+      "version": "^1.0.0"
+    }
+  ]
+}
