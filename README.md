@@ -1,5 +1,20 @@
-# ovoDoLMods
+# Mods for Degrees of Lewdity
 
-## 消灭空格
+下载见 releases。
 
-尽量删除汉化版中多出的空格。
+## Eliminate Spaces / 消灭空格
+
+尽量删除多出的空格。
+
+### 原理
+
+目前游戏中多出空格的原因：
+
+- 有文字输出的 widget 内换行（`\n`）和缩进（`\t`）
+- 无文字输出的 widget
+- 正文中 `switch`、`if` 代码块内换行和缩进
+
+故结合使用以下方法删去：
+
+- 删去有文字输出的 widget 内的换行和缩进
+- 在无文字输出的 widget 内使用 `<<silently>>`
