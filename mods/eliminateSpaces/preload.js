@@ -1,21 +1,30 @@
 (() => {
     const modUtils = window.modUtils;
+	const start = Date.now();
 
-    function deleteTandN(passages) {
-        for (let passage of passages) {
-            let replaced = modUtils.getPassageData(passage).content.replaceAll(/\/\*(.|\n)*?\*\//g, '').replaceAll(/<!--(\n|.)*?-->/g, '').replaceAll('\n', '').replaceAll('\t', '');
-            modUtils.updatePassageData(passage, replaced, ['widget'], 0);
+	function del(passages, ...patterns) {
+		for (let passage of passages) {
+            let passageContent = modUtils.getPassageData(passage).content;
+			for (let pattern of patterns) {
+				passageContent = passageContent.replaceAll(pattern, '');
+			}
+            modUtils.updatePassageData(passage, passageContent, modUtils.getPassageData(passage).tags, 0);
         }
+	}
+
+    function delTN(passages) {
+        del(passages, '\t', '\n');
     }
+
+	function delTNS(passages) {
+		del(passages, '\t', '\n', ' ');
+	}
 
     function addSilently(passages) {
         for (let [passage, widgets] of Object.entries(passages)) {
             let passageContent = modUtils.getPassageData(passage).content;
             let re = new RegExp(`(?<=<<widget "(${widgets.join('|')})">>)(.|\n)+?(?=<<\/widget>>)`, 'g');
-            let patterns = passageContent.match(re);
-            for (let pattern of patterns) {
-                passageContent = passageContent.replace(pattern, `<<silently>>${pattern}<</silently>>`);
-            }
+            passageContent = passageContent.replace(re, '<<silently>>$&<</silently>>');
             modUtils.updatePassageData(passage, passageContent, ['widget'], 0);
         }
     }
@@ -35,7 +44,28 @@
         ]
     });
 
-    // let allWidgetPassages = modUtils.getAllPassageData().filter(passage => passage.tags.includes('widget')).map(passage => passage.name);
-    deleteTandN(['Widgets Text']);
+	const start2 = Date.now();
+	console.log(`EliminateSpaces: ${start2 - start}`);
+
+    delTN([
+		'Bog Lost',
+		'Danube House Work',
+		'English Play Late Role',
+		'English Play Role Select',
+		'Estate Cards Kiss',
+		'Hospital Penis Enlargement',
+		'Hospital Penis Reduction',
+		'Moor Quicksand',
+		'Street Bully Flash 2',
+		'Whitney Rescue 2',
+		'Whitney Rescue Break',
+		'Widgets Text',
+	]);
+
+	delTNS([
+		'Domus Tech Support Accept',
+	]);
+
+	console.log(`EliminateSpaces: ${Date.now() - start2}`);
 
 })();
